@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HotelApp</string>
+    <string name="et_location">Desired Location</string>
+    <string name="price">price</string>
+    <string name="title">title</string>
+    <string name="enter_destination">Search for a region</string>
+</resources>

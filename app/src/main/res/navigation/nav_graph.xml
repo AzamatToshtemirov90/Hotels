@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/hotelListFragment">
+
+    <fragment
+        android:id="@+id/hotelListFragment"
+        android:name="com.azamat.hotelapp.ui.fragment.hotellist.HotelListFragment"
+        android:label="HotelListFragment">
+        <action
+            android:id="@+id/action_hotelListFragment_to_hotelDetailsFragment"
+            app:destination="@id/hotelDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hotelDetailsFragment"
+        android:name="com.azamat.hotelapp.ui.fragment.details.HotelDetailsFragment"
+        android:label="HotelDetailsFragment">
+        <action
+            android:id="@+id/action_hotelDetailsFragment_to_hotelListFragment"
+            app:destination="@id/hotelListFragment" />
+    </fragment>
+</navigation>
